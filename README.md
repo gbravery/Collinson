@@ -1,8 +1,10 @@
 **Architecture Overview:
+**
 I am showing this as a web application, under the assumption that it could be reactive, and therefore function as an app just as well on a mobile device.
 Obviously, the screen needs to be tuned for the application use case - in a larger web page data could be better spread out, with more graphics and text.
 
 **PCI Compliance
+**
 The solution has the potential to be PCI compliant, although that will depend on how payment needs to be taken when the "Confirm Booking" button is pressed.
 If it is corporate level, with some sort of charge to account, that will be fine - simply use the existing chargeback process that exists.
 If the card is stored on file somehow, PCI can be maintained and but is outside of scope of this application - we simply invoice that other system and it would perform the charge.
@@ -11,6 +13,7 @@ Backend systems would have to track the financial transactions being raised and 
 However, presentation of any relevant  receipts would be useful here (especially for expense type situations).
 
 **Omissions / Trade Offs
+**
 I've assumed the application has GPS tracking turned on (to show the estimated time to airport information).
 It would also need internet access to obtain realtime flight information and to perform bookings.
 I have also assumed a user is already logged in and has entered a flight - this data capture would need to be created.
